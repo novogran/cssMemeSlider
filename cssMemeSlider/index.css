@@ -7,31 +7,36 @@ body {
 
 h1 {
     width: 25vw;
+    margin: 0;
 }
 
 .slider {
     width: fit-content;
-    height: 48vh;
+    height: 50vh;
     display: flex;
     flex-direction: column;
     align-items: center;
-    align-content: center;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     justify-content: space-between;
 }
 
 .picture-slider-conteiner {
-    width: 25vw;
+    width: 38vh;
     overflow: hidden;
 }
 
 .picture-slider {
-    width: 9999vw;
+    height: 38vh;
+    width: 152vh;
+    display: flex;
+    column-gap: 1vh;
 }
 
 .img {
-    max-width: 25vw;
+    height: 100%;
+    width: 38vh;
     border-radius: 4%;
+    transition: 0.4s;
 }
 
 .text-and-controls {
@@ -58,4 +63,49 @@ h1 {
 
 .controls {
     display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 1vh;
 }
+
+input {
+    display: none;
+}
+
+
+label {
+    width: 1vh;
+    height: 1vh;
+    cursor: pointer;
+    background-color: #2b5cb8;
+    opacity: .5;
+    border-radius: 100%;
+    transition: all 0.4s ease;
+ }
+ 
+ label:hover {
+    opacity: 1;
+    transform:scale(1.1);
+ }
+
+ label:checked {
+    background-color: #2b5cb800;
+    border: 0.3vh solid #2b5cb8;
+ }
+
+#silence:checked ~ #first-img {
+    margin-left: 0;
+ }
+ 
+ #pedro:checked ~ #first-img {
+    margin-left: -39vh;
+ }
+ 
+ #casino:checked ~ #first-img {
+    margin-left: -78vh;
+ }
+ 
+ #boyvsgirl:checked ~ #first-img {
+    margin-left: -117vh;
+ }
