@@ -10,7 +10,7 @@ h1 {
     font-size: larger;
     color: #ffffff;
     margin: 0;
-    transition: 0.4s;
+    transition: 0.1s ease;
 }
 
 .slider {
@@ -43,11 +43,14 @@ h1 {
     width: 38vh;
     border-radius: 4%;
     transition: 0.4s;
+    justify-content: space-between
 }
 
 .text-and-controls {
+    width: 100%;
     display: flex;
     flex-direction: row;
+    justify-content: space-between
 }
 
 @media (max-width:500px){
@@ -57,7 +60,7 @@ h1 {
 }
 
 .text-conteiner {
-    width: 25vw;
+    width: 20vw;
     height: 9vh;
     display: flex;
     flex-direction: row;
@@ -90,20 +93,15 @@ label {
     width: 1vh;
     height: 1vh;
     cursor: pointer;
-    background-color: #2b5cb8;
-    opacity: .5;
+    background-color: #6e9ffc;
     border-radius: 100%;
-    transition: all 0.4s ease;
+    transition: 0.4s;
+    border: 0.3vh solid #6e9ffc;
  }
  
  label:hover {
-    opacity: 1;
-    transform:scale(1.1);
- }
-
- input:checked ~ .controls > label {
-    background-color: #2b5cb800;
-    border: 0.3vh solid #2b5cb8;
+    background-color: #ffffff;
+    border: 0.3vh solid #ffffff;
  }
 
 #silence:checked ~ .picture-slider-conteiner > #first-img {
@@ -111,51 +109,31 @@ label {
  }
  
  #pedro:checked ~ .picture-slider-conteiner > #first-img {
-    margin-left: -38vh;
+    margin-left: -100%;
  }
  
  #casino:checked ~ .picture-slider-conteiner > #first-img {
-    margin-left: -76vh;
+    margin-left: -200%;
  }
  
  #boyvsgirl:checked ~ .picture-slider-conteiner > #first-img {
-    margin-left: -114vh;
+    margin-left: -300%;
  }
 
  #silence:checked ~ .text-and-controls > .controls > .control[for='silence'] {
-    background-color: #2b5cb800;
-    border: 0.3vh solid #2b5cb8;
+    background-color: #ffffff00;
  }
  
  #pedro:checked ~ .text-and-controls > .controls > .control[for='pedro'] {
-    background-color: #2b5cb800;
-    border: 0.3vh solid #2b5cb8;
+    background-color: #ffffff00;
  }
  
  #casino:checked ~ .text-and-controls > .controls > .control[for='casino'] {
-    background-color: #2b5cb800;
-    border: 0.3vh solid #2b5cb8;
+    background-color: #ffffff00;
  }
  
  #boyvsgirl:checked ~ .text-and-controls > .controls > .control[for='boyvsgirl'] {
-    background-color: #2b5cb800;
-    border: 0.3vh solid #2b5cb8;
- }
-
- #silence:checked ~ .picture-slider-conteiner > #first-img {
-    margin-left: 0;
- }
- 
- #pedro:checked ~ .picture-slider-conteiner > #first-img {
-    margin-left: -38vh;
- }
- 
- #casino:checked ~ .text-and-controls > #first-img {
-    margin-left: -76vh;
- }
- 
- #boyvsgirl:checked ~ .picture-slider-conteiner > #first-img {
-    margin-left: -114vh;
+    background-color: #ffffff00;
  }
 
  #silence:checked ~ .text-and-controls > .text-conteiner > .text-slider > #first-img-text {
