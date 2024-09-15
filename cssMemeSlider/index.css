@@ -11,7 +11,7 @@ p {
     font-size: larger;
     color: #ffffff;
     margin: 0;
-    transition: 0.1s ease;
+    transition: 0.4s ease;
     text-align: start;
     font-weight: 100;
 }
@@ -43,7 +43,6 @@ p {
 .img {
     height: 100%;
     width: 50vw;
-    /* margin-right: 2vw; */
     border-radius: 4%;
     transition: 0.4s;
 }
@@ -106,8 +105,8 @@ p {
 }
 
 .control-conteiner {
-    width: 2vh;
-    height: 2vh;
+    width: 3vh;
+    height: 3vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -127,9 +126,9 @@ input {
     display: none;
 }
 
-label {
-    width: 0.5vh;
-    height: 0.5vh;
+.control {
+    width: 1vh;
+    height: 1vh;
     cursor: pointer;
     background-color: #6e9ffc;
     border-radius: 100%;
@@ -137,7 +136,7 @@ label {
     border: 0.3vh solid #6e9ffc;
  }
  
- label:hover {
+ .control:hover {
     background-color: #ffffff;
     border: 0.3vh solid #ffffff;
  }
